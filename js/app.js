@@ -1,9 +1,11 @@
 $('#removeDiv').click(function(){ 
 	$('#remove').remove() })
 
-$('#setText').val(function(){
+$('#setText').keyup(function(){
+	var result = $(this).val()
+	$('#needText').text(result) })
+
 	
-}
 
 
 $('#setColor').click(function(){
